@@ -40,7 +40,7 @@
         <mockito.version>1.9.0</mockito.version>
         <powermock.version>1.4.12</powermock.version>
         <activiti.version>5.22.0</activiti.version>
-
+        <mysql-connector-java.version>5.1.24</mysql-connector-java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -58,7 +58,11 @@
 
     <!-- 依赖项定义 -->
     <dependencies>
-
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql-connector-java.version}</version>
+        </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
